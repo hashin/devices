@@ -5,13 +5,16 @@ Device monitoring and control API.
 
 ## Requirements
 
-Devices API is tested against MRI 1.9.3.
+Devices API is tested against MRI 1.9.3. Use [rvm](https://rvm.io/) to maintain a consistent MRI 1.9.3 environment in systems like Ubuntu 16.04/16.10 etc.
 
 
 ## Installation 
 
 ```bash
 $ git clone git@github.com:lelylan/devices.git && cd devices
+$ \curl -sSL https://get.rvm.io | bash -s stable
+$ rvm install 1.9.3-p194
+$ rvm 1.9.3-p194
 $ gem install bundler
 $ bundle install 
 $ foreman start
